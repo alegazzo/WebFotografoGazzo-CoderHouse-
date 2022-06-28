@@ -86,7 +86,24 @@ header .container{
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5) ;
     border: 2px solid rgba(0,0,0,0.5);
     font-weight: bold;
+    animation: pulse 1s infinite;
 }
+/* ANIMACION DE PULSO PARA LOS BOTONES */
+@keyframes pulse{
+    0%{
+        transform: scale(.99);
+        box-shadow: 0 0 0 0 rgba(256,256,256,.1);
+    }
+    70%{
+        transform: scale(1);
+        box-shadow: 0 0 0 25px rgba(256,256,256,0);
+    }
+    100%{
+        transform: scale(.99);
+        box-shadow: 0 0 0 0 rgba(256,256,256,0);
+    }
+}
+
 #about{
     padding: 20px;
     margin-bottom: 5vh;
