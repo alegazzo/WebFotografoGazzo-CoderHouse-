@@ -233,7 +233,6 @@ footer .container a:hover{
     padding: 20px;
     margin: auto;
 }
-
 .proyecto{
     padding: 10px;
     display: flex;
@@ -244,7 +243,6 @@ footer .container a:hover{
     border-radius: 5px;
     box-shadow: 5px 5px 4px rgba(0,0,0,0.5);
 }
-
 .proyecto h1{
     font-size: 2em;
     margin-bottom: 20px;
