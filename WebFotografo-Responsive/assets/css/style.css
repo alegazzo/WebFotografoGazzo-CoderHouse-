@@ -240,21 +240,22 @@ footer .container a:hover {
   background-color: #0a9396;
 }
 
-#proyectos {
-  max-width: 1600px;
-  padding: 20px;
-  margin: auto;
+#proyectos{
+    max-width: 1600px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 40px;
 }
+.proyecto{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    text-align:center;
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    box-shadow: 5px 5px 4px rgba(0,0,0,0.5);
 
-.proyecto {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  text-align: center;
-  background-color: rgb(230, 230, 230);
-  border-radius: 5px;
-  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
 }
 
 .proyecto h1 {
@@ -268,6 +269,20 @@ footer .container a:hover {
 }
 
 /* servicios html */
+
+.accordion-button{
+    background-color: rgb(230, 230, 230);
+}
+.accordion-header{
+    background-color: rgb(230, 230, 230);
+}
+.accordion-item{
+    background-color: rgb(230, 230, 230);
+}
+.accordion{
+    background-color: rgb(230, 230, 230);
+}
+
 #services {
   max-width: 1400px;
   padding: 20px;
