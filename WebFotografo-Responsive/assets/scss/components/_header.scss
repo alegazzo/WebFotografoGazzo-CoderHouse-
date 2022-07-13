@@ -3,9 +3,7 @@
 header {
     background-color: $bg-header;
     .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @extend .clase-base;
         .titulo{
             font-size: 0.7em;
             padding: 5px;
@@ -20,7 +18,7 @@ header {
             justify-content: space-evenly;
             padding: 10px 15px;
             .botones{
-                color: rgb(240, 240, 240) !important;
+                color: map-get($mapa1, bg-mapa1) !important;
                 padding-bottom: 5px;
                 text-align: center;
                 font-size: 1.2em;

@@ -1,6 +1,8 @@
 // IMPORTS
 @import 'components/_header.scss';
+@import 'components/_footer.scss';
 @import 'base/variables.scss';
+@import 'base/mapas.scss';
 
 *{
     margin: 0;
@@ -28,10 +30,8 @@ a {
 }
 
 #hero{
-    display: flex;
-    align-items: center;
+    @extend .clase-base;
     text-align: center;
-    flex-direction: column;
     gap: 5px;
     height: 80vh;
     background-image:linear-gradient(
@@ -54,7 +54,7 @@ a {
     font-size: 2rem;
     background-color:#0a9396 ;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5) ;
+    @include black-shadow(2px,2px,10px);
     border: 2px solid rgba(0,0,0,0.5);
     font-weight: bold;
     animation: pulse 1s infinite;
@@ -85,12 +85,10 @@ a {
 }
 
 #about .container{
+    @extend .clase-base;
     width: 70%;
     margin: auto;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: center;
 }
 #about h1{
@@ -99,23 +97,17 @@ a {
 }
 #servicios{
     padding: 50px;
-    background-color: rgb(230, 230, 230);
+    background-color: map-get($mapa1, bg-mapa1);
 }
 #servicios .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend .clase-base;
 }
 #servicios .container .cards{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend .clase-base;
 }
 
 #servicios .container .cards .card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend .clase-base;
     background-image:linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
@@ -129,7 +121,7 @@ a {
     border-radius: 20%;
     color:rgb(240, 240, 240);
     margin-bottom: 25px; 
-    box-shadow: 5px 5px 4px rgba(0,0,0,0.5) ;
+    @include black-shadow(5px,5px,4px);
 }
 
 #servicios .container .cards .card p{
@@ -140,34 +132,13 @@ a {
     font-size: 1em;
 }
 #carrusel{
-    background-color:rgb(230, 230, 230);
-}
-
-footer{
-    background-color: #001219;
-}
-
-footer .container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-footer .container a{
-    color: rgb(230, 230, 230) !important;
-    font-size: 2em;
-    padding: 10px;
-}
-
-footer .container a:hover{
-    color: #0a9396;
+    background-color:map-get($mapa1, bg-mapa1);;
 }
 
 /* GALERIA HTML */
 
 #galeria{
-    background-color: rgb(230, 230, 230);
+    background-color: map-get($mapa1, bg-mapa1);
     display: grid;
     gap: 10px;
     grid-auto-flow: dense;
@@ -210,9 +181,9 @@ footer .container a:hover{
     flex-direction: column;
     margin: 10px;
     text-align:center;
-    background-color: rgb(230, 230, 230);
+    background-color: map-get($mapa1, bg-mapa1);
     border-radius: 5px;
-    box-shadow: 5px 5px 4px rgba(0,0,0,0.5);
+    @include black-shadow(5px,5px,4px);
 }
 .proyecto h1{
     font-size: 2em;
@@ -250,9 +221,9 @@ footer .container a:hover{
     flex-direction: column;
     margin-bottom: 20px;
     text-align:center;
-    background-color: rgb(230, 230, 230);
+    background-color: map-get($mapa1, bg-mapa1);
     border-radius: 5px;
-    box-shadow: 5px 5px 4px rgba(0,0,0,0.5);
+    @include black-shadow(5px,5px,4px);
 }
 
 #services .container .servicio a{
@@ -336,7 +307,7 @@ footer .container a:hover{
     border-radius: 5px;
     border: none;
     padding: 5px;
-    box-shadow: 5px 5px 4px rgba(0,0,0,0.5);
+    @include black-shadow(5px,5px,4px);
 }
 
 #contact .container .derecha button:hover{
