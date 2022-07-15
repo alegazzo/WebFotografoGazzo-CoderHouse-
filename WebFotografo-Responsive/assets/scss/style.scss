@@ -1,8 +1,11 @@
 // IMPORTS
-@import 'components/_header.scss';
-@import 'components/_footer.scss';
+@import 'components/header.scss';
+@import 'components/footer.scss';
 @import 'base/variables.scss';
 @import 'base/mapas.scss';
+@import 'base/extend.scss';
+@import 'base/mixin.scss';
+
 
 *{
     margin: 0;
@@ -46,9 +49,12 @@ a {
 }
 #hero h2{
     color: rgb(240, 240, 240);
-    font-size: 2em;
+    font-size: 2em; 
+    padding: 40px;
+    margin-top: 50px;
 }
 .boton{
+    margin-top: 50px;
     padding: 5px 10px;
     font-size: 2rem;
     background-color:#0a9396 ;

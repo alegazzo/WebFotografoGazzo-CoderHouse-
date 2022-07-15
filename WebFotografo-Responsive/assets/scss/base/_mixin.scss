@@ -1,0 +1,5 @@
+
+// @include black-shadow
+@mixin black-shadow($n1,$n2,$n3){
+    box-shadow: $n1 $n2 $n3 rgba(0,0,0,0.5);
+}

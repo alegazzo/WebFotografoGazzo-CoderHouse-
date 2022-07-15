@@ -1,11 +1,6 @@
 header {
   background-color: #001219;
 }
-header .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 header .container .titulo {
   font-size: 0.7em;
   padding: 5px;
@@ -21,7 +16,7 @@ header .container .navbar {
   padding: 10px 15px;
 }
 header .container .navbar .botones {
-  color: rgb(240, 240, 240) !important;
+  color: rgb(230, 230, 230) !important;
   padding-bottom: 5px;
   text-align: center;
   font-size: 1.2em;
@@ -38,6 +33,30 @@ header .container .navbar .botones:hover {
   header .container {
     flex-direction: row;
   }
+}
+
+footer {
+  background-color: #001219;
+}
+footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .container a {
+  color: rgb(230, 230, 230) !important;
+  font-size: 2em;
+  padding: 10px;
+}
+footer .container a:hover {
+  color: #0a9396 !important;
+}
+
+.clase-base, #servicios .container .cards .card, #servicios .container .cards, #servicios .container, #about .container, #hero, header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 * {
@@ -70,10 +89,7 @@ a {
 }
 
 #hero {
-  display: flex;
-  align-items: center;
   text-align: center;
-  flex-direction: column;
   gap: 5px;
   height: 80vh;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/paisaje1.webp");
@@ -84,11 +100,13 @@ a {
 
 #hero h2 {
   color: rgb(240, 240, 240);
-  padding: 40px 20px;
   font-size: 2em;
+  padding: 40px;
+  margin-top: 50px;
 }
 
 .boton {
+  margin-top: 50px;
   padding: 5px 10px;
   font-size: 2rem;
   background-color: #0a9396;
@@ -126,10 +144,7 @@ a {
 #about .container {
   width: 70%;
   margin: auto;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
@@ -143,22 +158,7 @@ a {
   background-color: rgb(230, 230, 230);
 }
 
-#servicios .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#servicios .container .cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 #servicios .container .cards .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fotografo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -181,27 +181,6 @@ a {
 
 #carrusel {
   background-color: rgb(230, 230, 230);
-}
-
-footer {
-  background-color: #001219;
-}
-
-footer .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-footer .container a {
-  color: rgb(230, 230, 230) !important;
-  font-size: 2em;
-  padding: 10px;
-}
-
-footer .container a:hover {
-  color: #0a9396;
 }
 
 /* GALERIA HTML */
@@ -240,22 +219,21 @@ footer .container a:hover {
   background-color: #0a9396;
 }
 
-#proyectos{
-    max-width: 1600px;
-    padding: 20px;
-    margin: auto;
-    margin-bottom: 40px;
+#proyectos {
+  max-width: 1600px;
+  padding: 20px;
+  margin: auto;
 }
-.proyecto{
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    text-align:center;
-    background-color: rgb(230, 230, 230);
-    border-radius: 5px;
-    box-shadow: 5px 5px 4px rgba(0,0,0,0.5);
 
+.proyecto {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  text-align: center;
+  background-color: rgb(230, 230, 230);
+  border-radius: 5px;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
 }
 
 .proyecto h1 {
@@ -269,20 +247,6 @@ footer .container a:hover {
 }
 
 /* servicios html */
-
-.accordion-button{
-    background-color: rgb(230, 230, 230);
-}
-.accordion-header{
-    background-color: rgb(230, 230, 230);
-}
-.accordion-item{
-    background-color: rgb(230, 230, 230);
-}
-.accordion{
-    background-color: rgb(230, 230, 230);
-}
-
 #services {
   max-width: 1400px;
   padding: 20px;
