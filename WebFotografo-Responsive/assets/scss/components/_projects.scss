@@ -1,0 +1,33 @@
+@import '../base/variables.scss';
+@import '../base/mapas.scss';
+@import '../base/extend.scss';
+@import '../base/mixin.scss';
+
+/* PROYECTOS HTML */
+
+#projectBody{
+    background-color: #0a9396;
+}
+#proyectos{
+    max-width: 1600px;
+    padding: 20px;
+    margin: auto;
+}
+.proyecto{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align:center;
+    background-color: map-get($mapa1, bg-mapa1);
+    border-radius: 5px;
+    @include black-shadow(5px,5px,4px);
+}
+.proyecto h1{
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 3px solid black;
+}
+.proyecto p{
+    margin-top: 20px;
+}
